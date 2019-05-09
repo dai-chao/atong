@@ -3,7 +3,7 @@
 //const LOCAL_SERVER = "http://192.168.0.44:8080";
 const ONLINE_SERVER = "http://182.92.109.146:7779";
 
-const LOCAL_SERVER = "http://182.92.109.146:7779";
+const LOCAL_SERVER = "http://192.168.0.126:8080";
 
 const API = {
     Login: LOCAL_SERVER + "/sys/login",                                  //登录
