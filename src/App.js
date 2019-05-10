@@ -21,21 +21,17 @@ class App extends Component{
   //       ajax(API.Download_Address)
   // }
   render(){
-      //console.log(API);
       return(
           <Router>
               <div className="App">
                   <div>
-                      <h1>内容</h1>
-
-                          <Route path="/film" component={Film}/>
-                          <Route path="/cinema" component={Cinema}/>
-                          <Route path="/mine" component={Mine}/>
-
+                      <Route path="/film" component={Film}/>
+                      <Route path="/cinema" component={Cinema}/>
+                      <Route path="/mine" component={Mine}/>
                   </div>
-                  <div>
-                      <Link to="/film">电影</Link>-----
-                      <Link to="/cinema">影院</Link>-----
+                  <div className="foot-list">
+                      <Link to="/film">电影</Link>
+                      <Link to="/cinema">影院</Link>
                       <Link to="mine">我的</Link>
                   </div>
               </div>
