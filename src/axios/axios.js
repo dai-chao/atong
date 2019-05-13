@@ -8,12 +8,12 @@ function ajax(url,data) {
     return axios.post(url, {
         data
     })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+        // .then(function (response) {
+        //     console.log(response);
+        // })
+        // .catch(function (error) {
+        //     console.log(error);
+        // });
 }
 export default ajax
 

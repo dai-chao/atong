@@ -29,9 +29,18 @@ class App extends Component{
                  {this.props.children}
              </div>
              <div className="foot-list">
-                 <Link to="film">电影</Link>
-                 <Link to="cinema">影院</Link>
-                 <Link to="mine">我的</Link>
+                 <Link to="film">
+                     <em  className="color" class="icon iconfont icon-dianying1"></em>
+                     <p className="color">电影</p>
+                 </Link>
+                 <Link to="cinema">
+                     <em className="color" class="icon iconfont icon-yingyuan"></em>
+                     <p className="color">影院</p>
+                 </Link>
+                 <Link to="mine">
+                     <em   className="color" class="icon iconfont icon-wode"></em>
+                     <p className="color">我的</p>
+                 </Link>
              </div>
          </div>
     )

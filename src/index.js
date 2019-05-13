@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from "./router/index"
 import './index.css';
+import "./iconFont/font_z7qyooapcwe/iconfont.css"
 
 
 import * as serviceWorker from './serviceWorker';

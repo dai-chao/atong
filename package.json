@@ -48,6 +48,7 @@
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "semver": "6.0.0",
@@ -64,7 +65,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
-  "proxy": "http://182.92.109.146:7779",
+  "proxy": "http://m.maoyan.com",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -15,9 +15,10 @@ class Router extends Component{
     render(){
         return(
             <HashRouter>
-                <App>                    {/*component={Film}*/}
+                <App>
                     <Switch>
                         <Route  exact path="/" component={Film}/>
+                                            {/*component={Film}*/}
                         <Route path="/film"  render={()=>{
                             return (
                                 <Film>
