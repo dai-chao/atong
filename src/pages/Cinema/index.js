@@ -2,32 +2,33 @@
 import React,{Component} from "react"
 import Header from "../../component/Header/Header"
 import { createStore } from "redux"
+import store from "../../store/index"
 import "./index.css"
 
-//console.log(createStore);
 
-let initMoney ={
-    money:1000
-};
-let reducer =  function(state=initMoney,action){
-    switch (action.type){
-        case "ADD":state.money ++ ; return {...state};
-        case "DEL":state.money -- ; return {...state};
-        default: return state
-    }
-};
-let store = createStore(reducer);
-console.log(store.getState().money);
+
+// let initMoney ={
+//     money:1000
+// };
+// let reducer =  function(state=initMoney,action){
+//     switch (action.type){
+//         case "ADD":state.money ++ ; return {...state};
+//         case "DEL":state.money -- ; return {...state};
+//         default: return state
+//     }
+// };
+// let store = createStore(reducer);
+
+//console.log(store.getState());
 class Home extends Component{
     constructor(props){
         super(props)
-
     }
     render(){
 
         return(
             <div>
-                {store.getState().money}
+                {store.getState().cinemaReducer.money}
             </div>
         )
     }
@@ -46,22 +47,22 @@ class Cinema extends Component{
         store.dispatch({
             type:'ADD'
         });
-        console.log(store.getState().money);
+        console.log(store.getState().cinemaReducer.money);
     }
     delChange(){
-
         store.dispatch({
             type:'DEL'
         });
-        console.log(store.getState().money);
+        console.log(store.getState().cinemaReducer.money);
     }
-
     componentDidMount(){
         store.subscribe(()=>{
             this.setState({
-                money:store.getState().money
-            })
-        })
+                money:store.getState().cinemaReducer.money
+            });
+
+        });
+        // console.log( a instanceof Object );
     }
 
     render(){
@@ -74,6 +75,9 @@ class Cinema extends Component{
                 <Home/>
             </div>
         )
+    }
+    componentWillUnmount(){
+
     }
 }
 export default Cinema

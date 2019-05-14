@@ -30,15 +30,15 @@ class App extends Component{
              </div>
              <div className="foot-list">
                  <Link to="film">
-                     <em  className="color" class="icon iconfont icon-dianying1"></em>
+                     <em  className="color" className="icon iconfont icon-dianying1"></em>
                      <p className="color">电影</p>
                  </Link>
                  <Link to="cinema">
-                     <em className="color" class="icon iconfont icon-yingyuan"></em>
+                     <em className="color" className="icon iconfont icon-yingyuan"></em>
                      <p className="color">影院</p>
                  </Link>
                  <Link to="mine">
-                     <em   className="color" class="icon iconfont icon-wode"></em>
+                     <em   className="color" className="icon iconfont icon-wode"></em>
                      <p className="color">我的</p>
                  </Link>
              </div>
