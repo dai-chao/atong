@@ -18,7 +18,6 @@ class Router extends Component{
                 <App>
                     <Switch>
                         <Route  exact path="/" component={Film}/>
-                                            {/*component={Film}*/}
                         <Route path="/film"  render={()=>{
                             return (
                                 <Film>
